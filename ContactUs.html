@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>LoveSpot</title>
+ 	<script src="ContactUs.js"> </script>
+	<link rel="stylesheet" href="ContactUs.css"/>
+    <link  rel="stylesheet" href="stylesheet.css"/>
+
+</head>
+
+<body>
+        <div id="heather">
+        	<table>
+            <tr>            	
+                <td> <a href="index.html">
+                <img src="pics/icon.png" alt="LoveSpot" style="width:40px;height:40px"> 
+                </a>
+                </td>
+                <td> <a href="theTeam.html"> <p class="heather_menu">The Team</p> </a> </td>
+                <td> <a href="http://www.facebook.com"> <p class="heather_menu">Facebook</p> </a> </td>
+                <td> <a href="ContactUs.html"> <p class="heather_menu">Contact us </p> </a> </td>
+            
+            </tr>
+            </table>
+        </div>
+        
+<h1>Send us a message</h1>
+<form>
+	<p>Your name
+    <br>
+  <span class="errors" id="senderNameError">Enter your name</span><br>
+    <input type="text" id="senderName">
+    </p>
+    <p>Your email <br>
+      <span class="errors" id="emailError">Enter your email </span><br>
+    
+    <input type="text" id="senderEmail">
+    </p>
+  
+  <p>Write us something nice
+      <br>
+    <span class="errors" id="messageError">Write a message</span><br>
+    
+    <textarea id="messageToSend"></textarea>
+    </p>
+</form>
+<input type="button" value= "Send" id="sendButton">
+</body>
+</html>

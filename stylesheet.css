@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-Apr-2015, 19:41:40
+    Author     : Victor
+*/
+ body
+    {
+    background-color:white;
+    
+    }
+    h1 {
+        color: #e91e63;
+        font-size: 4em;
+        font-family: Arial;
+    }
+    h2{
+        color: #e91e63;
+        font-size: 2em;
+    }
+    p{
+        color: #616161;
+        font-size:1em;
+    }
+    ul{
+        color: #616161;
+    }
+    #heather{
+        float:top;
+		width:100%;
+		height:50px;
+		top:0;
+		left:0;
+		position:absolute;
+        background-color: #616161;
+
+				
+        
+    }
+    .heather_menu{
+        display: inline-block;
+        text-decoration:none;
+        heght:40px;
+		width:40px;
+		color:#e91e63;       
+    }
+	table{    
+	white-space: nowrap;
+	table-layout:fixed;
+	width:300px;
+	}
+	
+    .heather_menu:hover{
+        font-weight: bold;
+    }
+    #body_of_website{
+	   width:100%;
+	   position:relative;
+	   top:50px;       
+        
+    }
+	#twitter_button{
+		position:relative;
+		top:50px;
+		}
+  
