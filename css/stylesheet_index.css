@@ -7,7 +7,19 @@ and open the template in the editor.
     Created on : 13-Apr-2015, 19:41:40
     Author     : Victor
 */
- body
+ 
+   
+   /* navbar text style*/
+   .navbar-text > a { 
+   		color:inherit;
+		text-decoration:none;
+   }
+  #mainTitle { 
+  	color:#e91e63;
+	text-shadow: black 0.1em 0.1em 0.3em;
+  }
+   /*
+   body
     {
     background-color:white;
     
@@ -28,6 +40,7 @@ and open the template in the editor.
     ul{
         color: #616161;
     }
+   
     #heather{
         float:top;
 		width:100%;
@@ -66,4 +79,5 @@ and open the template in the editor.
 		position:relative;
 		top:50px;
 		}
-  
+	
+  */
