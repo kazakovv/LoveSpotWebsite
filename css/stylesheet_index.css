@@ -16,8 +16,21 @@ and open the template in the editor.
    }
   #mainTitle { 
   	color:#e91e63;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-shadow: black 0.1em 0.1em 0.3em;
   }
+  #mainSubtitle {
+	  	font-family: 'Open Sans Condensed', sans-serif;
+
+	 }
+  
+  h1, h2, h3, h4, h5, h6 { 
+  	font-weight:bold;
+	font-family: 'Open Sans', sans-serif;  
+}
+  p, li {
+	font-family: 'Open Sans', sans-serif;	
+}
 
    /*
    body
