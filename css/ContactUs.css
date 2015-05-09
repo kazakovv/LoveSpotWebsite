@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+ .navbar-text > a { 
+   		color:inherit;
+		text-decoration:none;
+   }
+
+input[type=text], input[type=email], textarea{
+margin-bottom: 20px;
+
+ }
+ 
+ 

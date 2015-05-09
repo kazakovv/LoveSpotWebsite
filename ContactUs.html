@@ -1,50 +1,103 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-	<title>LoveSpot</title>
- 	<script src="ContactUs.js"> </script>
-	<link rel="stylesheet" href="ContactUs.css"/>
-    <link  rel="stylesheet" href="stylesheet.css"/>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="css/ContactUs.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/CommonElements.css">
 
+    
+    <!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>    
+    
+    <title>LoveSpot</title>
 </head>
 
 <body>
-        <div id="heather">
-        	<table>
-            <tr>            	
-                <td> <a href="index.html">
-                <img src="pics/icon.png" alt="LoveSpot" style="width:40px;height:40px"> 
-                </a>
-                </td>
-                <td> <a href="theTeam.html"> <p class="heather_menu">The Team</p> </a> </td>
-               
-                <td> <a href="ContactUs.html"> <p class="heather_menu">Contact us </p> </a> </td>
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+        
+        <!-- BEGINNING OF NAVBAR -->
+    	<div class="navbar navbar-default navbar-static-top" role="navigation">
+        	<div class="container">
+            	<div class="navbar-header">
+                	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+         			<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>    
+                    </button>
+                    <a class="navbar-brand" href="#">
+        			<img style="max-width:35px; margin-top: -7px;" alt="Brand" src="pics/icon.png">
+      				</a> 
+                    <a class="navbar-brand" href="#">LoveSpot</a>                   
+                </div>
+                <div class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="theTeam.html">The Team</a></li>
+                    <li class="active"><a href="ContactUs.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- END OF NAVBAR-->
+	
+    <!-- SEND FORM-->
+    <div class="container">
+    	<div class="page-header">
+        	<h1>Send us a message</h1>
+        </div>
+        <form class="form-horizontal" role="form">
+        	<div  class="form-goup">
+           		<label for="contact-name" class="col-sm-2  control-label">Name</label>
+             <div class="col-sm-10">
+             	<input type="text" class="form-control" id="contact-name" placeholder="First and last name">
+             </div>
+        	</div> <!-- end of form group NAME -->
             
-            </tr>
-            </table>
+            <div  class="form-goup">
+           		<label for="contact-email" class="col-sm-2  control-label">Email</label>
+             <div class="col-sm-10">
+             	<input type="email" class="form-control" id="contact-name" placeholder="name@domain.com">
+             </div>
+        	</div> <!-- end of form group EMAIL -->
+            
+            <div  class="form-goup">
+           		<label for="contact-message" class="col-sm-2  control-label">Message</label>
+             <div class="col-sm-10">
+             	<textarea class="form-control" rows="4" placeholder="Write us something nice"></textarea>
+             </div>
+             <button type="submit" class="btn btn-primary pull-right" id="sendButton">Send</button>
+        	</div> <!-- end of form group MESSAGE -->
+        </form>
+    </div>
+    <!-- END OF SEND FORM-->
+
+<!-- FOOTER-->
+       	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        	<div class="container">
+            	<div class="navbar-text pull-left">
+                	<p>This is LoveSpot &copy All rights reserved.</p>
+                </div>
+                <div class="navbar-text pull-right">
+                <a href="https://www.facebook.com/pages/LoveSpot/1399152910402521?ref=ts&fref=ts">
+                <i class="fa fa-facebook-official fa-2x"></i></a>
+                
+                <a href="https://twitter.com/LoveSpotApp">
+                <i class="fa fa-twitter fa-2x"></i></a>
+
+                </div>
+            </div>
         </div>
         
-<h1>Send us a message</h1>
-<form>
-	<p>Your name
-    <br>
-  <span class="errors" id="senderNameError">Enter your name</span><br>
-    <input type="text" id="senderName">
-    </p>
-    <p>Your email <br>
-      <span class="errors" id="emailError">Enter your email </span><br>
-    
-    <input type="text" id="senderEmail">
-    </p>
-  
-  <p>Write us something nice
-      <br>
-    <span class="errors" id="messageError">Write a message</span><br>
-    
-    <textarea id="messageToSend"></textarea>
-    </p>
-</form>
-<input type="button" value= "Send" id="sendButton">
+        <!-- END of FOOTER -->
 </body>
 </html>
