@@ -1,6 +1,7 @@
 // JavaScript Document
 
 window.onload = canPlayVideo;
+
 function canPlayVideo() { 
 	var browserCanPlayVideo=false;
 	//if not empty the browser can play it
