@@ -15,6 +15,7 @@ function canPlayVideo() {
 	
 	//ako browserCanPlayVideo is false we delete the video container and replace it with img container
 	if(browserCanPlayVideo==false) { 
-		alert("You can't play video");
+		var title = document.getElementById("mainTitle");
+		title.innerHTML="not working";
 	}
 }
