@@ -14,8 +14,8 @@ function canPlayVideo() {
 	}
 	
 	//ako browserCanPlayVideo is false we delete the video container and replace it with img container
-	if(browserCanPlayVideo==false) { 
+		if(browserCanPlayVideo==false) { 
 		var title = document.getElementById("mainTitle");
 		title.innerHTML="not working";
-	}
+		}
 }
