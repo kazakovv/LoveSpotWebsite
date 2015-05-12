@@ -2,6 +2,50 @@
 
 window.onload = init;
 
+
+
+
+function init() { 
+
+
+sendButton.onclick = sendMail();
+
+}
+
+
+function sendMail() {
+nameSender = $('#contact-name').val();
+emailSender = $('#contact-email').val();
+message = $('#contact-message').val();
+
+	
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': '5C5lNIkNFHwbe8gwPHO7PA',
+        'message': {
+          'from_email': + emailSender,
+          'to': [
+              {
+                'email': 'kazakov.victor@hotmail.com',
+                'name': + nameSender,
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': 'LoveSpot email',
+          'html': + message
+        }
+      }
+     }).done(function(response) {
+       console.log(response); // if you're into that sorta thing
+     });
+	 
+	 alert("email sent");
+}
+
+/*
 function init(){
     var sendButton = document.getElementById("sendButton");
 	sendButton.onclick = handleSendButtonClick;
@@ -36,4 +80,8 @@ function handleSendButtonClick() {
 	} else {
 		messageError.style.visibility="hidden";
 	}
+	
+	
 }
+
+*/
