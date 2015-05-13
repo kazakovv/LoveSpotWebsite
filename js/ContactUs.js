@@ -3,8 +3,21 @@
 
 
 $(document).ready(function() { 
-	$("#sendButton").click(sendMail);
+	$('#sendButton').click(function(){
+    validateForm();  
+	
 });
+
+function validateForm() { 
+var nameSender = $('#contact-name').val();
+var mailSender = $('#contact-email').val();
+var message = $('#contact-message').val();
+
+if(nameSender == ""){
+            $('#contact-name').css('border-color','red');
+        }
+
+}
 
 function sendMail() {
 var nameSender = $('#contact-name').val();
@@ -37,4 +50,4 @@ var message = $('#contact-message').val();
 	 
 	 alert("Thank you for your message! A member of our team will get back to you shortly.");
 }
-
+});
