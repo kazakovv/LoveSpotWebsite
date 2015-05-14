@@ -1,4 +1,13 @@
-    
+$(document).ready(function(e) {
+    $('div#scrollBox.scroll').click(function(e) {
+		$('html,body').animate({
+        scrollTop: $("#scrollTo").offset().top},
+        'slow');
+				});
+});
+
+
+	
 	
 	$(function(){
         
@@ -56,10 +65,12 @@
 				if(first === undefined) { 
 					$('#scrollBox .scrollMessage').fadeIn(1000);
 
-					$('#scrollBox .scrollMessage').html('&#9660;');	
+					$('#scrollBox .scrollMessage').html('&#9660;');
 				} else { 
 					$('#scrollBox .scrollMessage').fadeOut(1000);
 				}
+				
+				
         });
         
         
