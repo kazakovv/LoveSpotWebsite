@@ -21,7 +21,7 @@ var message = $('#contact-message').val();
           'from_email': mailSender,
           'to': [
               {
-                'email': 'maria.mateeva@hotmail.fr',
+                'email': 'lovespotapp@gmail.com',
                 'name':  nameSender,
                 'type': 'to'
               }
