@@ -54,7 +54,19 @@ height:auto;
 /*background-color:grey;
 opacity:0.6;*/
 }
-
+video{
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top: 0px;
+padding-bottom:0px;
+width:100%;
+height:auto;
+background-size: 100% 100%;
+	
+}
 
 .overlay-text {
 	position: absolute;
