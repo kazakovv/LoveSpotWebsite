@@ -2,25 +2,12 @@
 
 
 
-$(document).ready(function() { 
-	$('#sendButton').click(function(){
-    validateForm();  
-	
-});
 
-function validateForm() { 
-var nameSender = $('#contact-name').val();
-var mailSender = $('#contact-email').val();
-var message = $('#contact-message').val();
 
-if(nameSender == ""){
-            $('#contact-name').css('border-color','red');
-        }
 
-}
 
 function sendMail() {
-var nameSender = $('#contact-name').val();
+var nameSender = $('#contactName').val();
 var mailSender = $('#contact-email').val();
 var message = $('#contact-message').val();
 
@@ -31,23 +18,22 @@ var message = $('#contact-message').val();
       data: {
         'key': '5C5lNIkNFHwbe8gwPHO7PA',
         'message': {
-          'from_email': + mailSender,
+          'from_email': mailSender,
           'to': [
               {
-                'email': 'kazakov.victor@hotmail.com',
-                'name': + nameSender,
+                'email': 'maria.mateeva@hotmail.fr',
+                'name':  nameSender,
                 'type': 'to'
               }
             ],
           'autotext': 'true',
           'subject': 'LoveSpot email',
-          'html': + message
+          'html': message
         }
       }
      }).done(function(response) {
        console.log(response); // if you're into that sorta thing
      });
-	 
+	 location.reload();
 	 alert("Thank you for your message! A member of our team will get back to you shortly.");
 }
-});
